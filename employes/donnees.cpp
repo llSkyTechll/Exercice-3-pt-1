@@ -48,6 +48,20 @@ bool Donnees::AjouterTache(Tache inTache)
 {
 	bool ajoutReussi = false;
 
+	int cpt = 0;
+	while (cpt < maxTaches && ajoutReussi == false)
+	{
+		if (lesTaches[cpt] == NULL)
+		{
+			lesTaches[cpt] = &inTache;
+			ajoutReussi = true;
+		}
+		else
+		{
+			cpt++;
+		}
+	}
+
 	return ajoutReussi;
 }
 Employe Donnees::ChercherEmployeSelonNumero(string inNumero)
