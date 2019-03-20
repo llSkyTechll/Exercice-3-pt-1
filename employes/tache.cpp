@@ -2,6 +2,7 @@
 
 Tache::Tache()
 {
+	identifiant = "";
 	titre = "";
 	dureePrevu = 0;
 	uniteMesure = "";
